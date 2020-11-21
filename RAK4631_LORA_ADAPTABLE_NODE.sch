@@ -60,93 +60,30 @@ $EndComp
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5EF1CAC1
-P 2950 2250
-F 0 "BT1" H 3068 2346 50  0000 L CNN
-F 1 "Battery_Cell" H 3068 2255 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 2950 2310 50  0001 C CNN
-F 3 "~" V 2950 2310 50  0001 C CNN
-	1    2950 2250
+P 2400 2250
+F 0 "BT1" H 2518 2346 50  0000 L CNN
+F 1 "Battery_Cell" H 2518 2255 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 2400 2310 50  0001 C CNN
+F 3 "~" V 2400 2310 50  0001 C CNN
+	1    2400 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Battery_Cell BT2
 U 1 1 5EF1E49F
-P 2950 3600
-F 0 "BT2" H 3068 3696 50  0000 L CNN
-F 1 "Battery_Cell" H 3068 3605 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 2950 3660 50  0001 C CNN
-F 3 "~" V 2950 3660 50  0001 C CNN
-	1    2950 3600
+P 2400 3600
+F 0 "BT2" H 2518 3696 50  0000 L CNN
+F 1 "Battery_Cell" H 2518 3605 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_2460_1xAA" V 2400 3660 50  0001 C CNN
+F 3 "~" V 2400 3660 50  0001 C CNN
+	1    2400 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 3950 5850 4400
+	2400 3400 2400 2850
+Connection ~ 2400 2850
 Wire Wire Line
-	5850 4400 5750 4400
-Wire Wire Line
-	5750 3950 5750 4400
-Connection ~ 5750 4400
-Wire Wire Line
-	5750 4400 5650 4400
-Wire Wire Line
-	5650 3950 5650 4400
-Connection ~ 5650 4400
-Wire Wire Line
-	5650 4400 5550 4400
-Wire Wire Line
-	5550 3950 5550 4400
-Connection ~ 5550 4400
-Wire Wire Line
-	5550 4400 5450 4400
-Wire Wire Line
-	5450 3950 5450 4400
-Connection ~ 5450 4400
-Wire Wire Line
-	5450 4400 5350 4400
-Wire Wire Line
-	5350 3950 5350 4400
-Connection ~ 5350 4400
-Wire Wire Line
-	5350 4400 5250 4400
-Wire Wire Line
-	5250 3950 5250 4400
-Connection ~ 5250 4400
-Wire Wire Line
-	5250 4400 5150 4400
-Wire Wire Line
-	5150 3950 5150 4400
-Connection ~ 5150 4400
-Wire Wire Line
-	5150 4400 5050 4400
-Wire Wire Line
-	5050 3950 5050 4400
-Connection ~ 5050 4400
-Wire Wire Line
-	5050 4400 3600 4400
-$Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 5EF24551
-P 2950 1850
-F 0 "JP1" V 2996 1917 50  0000 L CNN
-F 1 "SolderJumper_3_Open" V 2905 1917 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 2950 1850 50  0001 C CNN
-F 3 "~" H 2950 1850 50  0001 C CNN
-	1    2950 1850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5450 1550 5450 1950
-Wire Wire Line
-	2950 3400 2950 2850
-Wire Wire Line
-	2950 1550 2950 1650
-Connection ~ 2950 2850
-Wire Wire Line
-	2950 2850 2950 2350
-Wire Wire Line
-	7700 4400 5850 4400
-Connection ~ 5850 4400
-Connection ~ 5450 1550
+	2400 2850 2400 2350
 $Comp
 L Connector:Conn_01x03_Male J3
 U 1 1 5EFD66CA
@@ -165,26 +102,22 @@ Wire Wire Line
 Wire Wire Line
 	7950 2300 7500 2300
 Wire Wire Line
-	2800 1550 2950 1550
+	2400 2850 2100 2850
 Wire Wire Line
-	2950 2850 2800 2850
-Wire Wire Line
-	2800 1550 2800 2850
+	2100 1550 2100 2850
 $Comp
 L Connector:Conn_01x03_Male J4
 U 1 1 5F0D7BF4
-P 3250 4000
-F 0 "J4" H 3358 4281 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 3358 4190 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 4000 50  0001 C CNN
-F 3 "~" H 3250 4000 50  0001 C CNN
-	1    3250 4000
+P 2800 4000
+F 0 "J4" H 2908 4281 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2908 4190 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2800 4000 50  0001 C CNN
+F 3 "~" H 2800 4000 50  0001 C CNN
+	1    2800 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 3900 3450 3900
-Wire Wire Line
-	6350 2450 6600 2450
+	3400 3900 3000 3900
 $Comp
 L Connector:Conn_01x11_Male J5
 U 1 1 5F122DDC
@@ -197,192 +130,34 @@ F 3 "~" H 7350 3050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6350 2750 7150 2750
+	6650 2650 7150 2650
 Wire Wire Line
-	6350 2850 7150 2850
+	6650 2650 6650 4000
 Wire Wire Line
-	4250 3650 4550 3650
-Wire Wire Line
-	4100 2550 4100 4050
-Wire Wire Line
-	4100 4050 6900 4050
-Wire Wire Line
-	6900 4050 6900 2950
-Wire Wire Line
-	6900 2950 7150 2950
-Wire Wire Line
-	4100 2550 4550 2550
-Wire Wire Line
-	6850 4000 4250 4000
-Wire Wire Line
-	4250 3650 4250 4000
-Wire Wire Line
-	4050 2450 4050 4100
-Wire Wire Line
-	4050 4100 6950 4100
-Wire Wire Line
-	6950 4100 6950 3050
-Wire Wire Line
-	6950 3050 7150 3050
-Wire Wire Line
-	4050 2450 4550 2450
-Wire Wire Line
-	6850 2650 7150 2650
-Wire Wire Line
-	6850 2650 6850 4000
-Wire Wire Line
-	6800 2550 6800 2650
-Wire Wire Line
-	6800 2650 6350 2650
-Wire Wire Line
-	6800 2550 7150 2550
-Wire Wire Line
-	2950 3700 2950 4400
-Wire Wire Line
-	4000 2350 4000 4150
-Wire Wire Line
-	4000 4150 7000 4150
-Wire Wire Line
-	7000 4150 7000 3150
-Wire Wire Line
-	7000 3150 7150 3150
-Wire Wire Line
-	4000 2350 4550 2350
-Wire Wire Line
-	3950 3450 3950 4200
-Wire Wire Line
-	3950 4200 7050 4200
-Wire Wire Line
-	7050 4200 7050 3250
-Wire Wire Line
-	7050 3250 7150 3250
-Wire Wire Line
-	3950 3450 4550 3450
-Wire Wire Line
-	7150 3350 6800 3350
-Wire Wire Line
-	6800 3350 6800 2950
-Wire Wire Line
-	6350 2950 6800 2950
-Wire Wire Line
-	7150 3450 6750 3450
-Wire Wire Line
-	6750 3450 6750 3050
-Wire Wire Line
-	6350 3050 6750 3050
-Wire Wire Line
-	7150 3550 6700 3550
-Wire Wire Line
-	6700 3550 6700 2350
-Wire Wire Line
-	6350 2350 6700 2350
-Wire Wire Line
-	5450 1550 3650 1550
-Wire Wire Line
-	3100 1550 3100 1850
-Wire Wire Line
-	7700 1650 7700 4400
+	7700 1650 7700 4500
 Wire Wire Line
 	7600 1750 7600 1550
 Wire Wire Line
-	5450 1550 7600 1550
-Wire Wire Line
-	4550 3150 3850 3150
-Wire Wire Line
-	3850 4100 3450 4100
-Wire Wire Line
-	4550 3250 3800 3250
-Wire Wire Line
-	3800 4000 3450 4000
+	3450 4000 3000 4000
 $Comp
 L Connector:Conn_01x11_Male J8
 U 1 1 5EF618B5
-P 3250 2850
-F 0 "J8" H 3358 3531 50  0000 C CNN
-F 1 "Conn_01x11_Male" H 3358 3440 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 3250 2850 50  0001 C CNN
-F 3 "~" H 3250 2850 50  0001 C CNN
-	1    3250 2850
+P 2750 2850
+F 0 "J8" H 2858 3531 50  0000 C CNN
+F 1 "Conn_01x11_Male" H 2858 3440 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 2750 2850 50  0001 C CNN
+F 3 "~" H 2750 2850 50  0001 C CNN
+	1    2750 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 3150 3850 4100
+	2950 3250 3300 3250
 Wire Wire Line
-	3800 3250 3800 4000
+	2950 3350 3350 3350
 Wire Wire Line
-	3450 2650 4550 2650
+	3400 1850 5750 1850
 Wire Wire Line
-	3450 2750 4550 2750
-Wire Wire Line
-	3450 2850 4550 2850
-Wire Wire Line
-	3450 2950 4550 2950
-Wire Wire Line
-	3700 3050 3450 3050
-Wire Wire Line
-	6350 2550 6650 2550
-Wire Wire Line
-	3800 3050 3800 3150
-Wire Wire Line
-	3800 3150 3450 3150
-Wire Wire Line
-	3800 3050 4550 3050
-Wire Wire Line
-	3450 3250 3650 3250
-Wire Wire Line
-	3650 3250 3650 1550
-Connection ~ 3650 1550
-Wire Wire Line
-	3650 1550 3100 1550
-Wire Wire Line
-	3450 3350 3600 3350
-Wire Wire Line
-	3600 3350 3600 4400
-Connection ~ 3600 4400
-Wire Wire Line
-	3600 4400 2950 4400
-Wire Wire Line
-	6350 3350 6550 3350
-Wire Wire Line
-	6550 3350 6550 1800
-Wire Wire Line
-	6550 1800 3600 1800
-Wire Wire Line
-	3600 1800 3600 2550
-Wire Wire Line
-	3600 2550 3450 2550
-Wire Wire Line
-	6350 3250 6500 3250
-Wire Wire Line
-	6500 3250 6500 1750
-Wire Wire Line
-	6500 1750 3550 1750
-Wire Wire Line
-	3550 1750 3550 2450
-Wire Wire Line
-	3550 2450 3450 2450
-Wire Wire Line
-	6350 3150 6450 3150
-Wire Wire Line
-	6450 3150 6450 1700
-Wire Wire Line
-	6450 1700 3500 1700
-Wire Wire Line
-	3500 1700 3500 2350
-Wire Wire Line
-	3500 2350 3450 2350
-Wire Wire Line
-	3700 1850 6650 1850
-Wire Wire Line
-	6650 1850 6650 2550
-Wire Wire Line
-	3700 1850 3700 3050
-Wire Wire Line
-	3750 1900 6600 1900
-Wire Wire Line
-	6600 1900 6600 2450
-Wire Wire Line
-	3750 1900 3750 3900
+	3400 1850 3400 3900
 Wire Wire Line
 	7950 1650 7700 1650
 Wire Wire Line
@@ -409,19 +184,6 @@ F 3 "~" H 8150 2200 50  0001 C CNN
 	1    8150 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Male J9
-U 1 1 5F0B7D9E
-P 7700 1550
-F 0 "J9" H 7808 1731 50  0000 C CNN
-F 1 "Conn_01x01_Male" H 7808 1640 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7700 1550 50  0001 C CNN
-F 3 "~" H 7700 1550 50  0001 C CNN
-	1    7700 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 1550 7950 1550
 $Comp
 L Connector:Conn_01x09_Male J11
 U 1 1 5EFBD325
@@ -485,20 +247,249 @@ NoConn ~ 6100 5700
 $Comp
 L FBB04004-M40S1003K6M:FBB04004-M40S1003K6M J14
 U 1 1 5FB8A362
-P 450 4550
-F 0 "J14" H 2994 4546 50  0000 L CNN
-F 1 "FBB04004-M40S1003K6M" H 2994 4455 50  0000 L CNN
-F 2 "FBB04004M40S1003K6M" H 2800 4850 50  0001 L CNN
-F 3 "https://tupian.txga.com/serials-attach/FBB04004-M/Drawing-FBB04004-M.pdf" H 2800 4750 50  0001 L CNN
-F 4 "Mezzanine Connectors (Board to Board) SMD RoHS 40 Pos" H 2800 4650 50  0001 L CNN "Description"
-F 5 "0.95" H 2800 4550 50  0001 L CNN "Height"
-F 6 "TXGA" H 2800 4450 50  0001 L CNN "Manufacturer_Name"
-F 7 "FBB04004-M40S1003K6M" H 2800 4350 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 2800 4250 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 2800 4150 50  0001 L CNN "Arrow Price/Stock"
-F 10 "" H 2800 4050 50  0001 L CNN "Mouser Part Number"
-F 11 "" H 2800 3950 50  0001 L CNN "Mouser Price/Stock"
-	1    450  4550
+P 3950 2800
+F 0 "J14" H 6494 2796 50  0000 L CNN
+F 1 "FBB04004-M40S1003K6M" H 6494 2705 50  0000 L CNN
+F 2 "FBB04004M40S1003K6M" H 6300 3100 50  0001 L CNN
+F 3 "https://tupian.txga.com/serials-attach/FBB04004-M/Drawing-FBB04004-M.pdf" H 6300 3000 50  0001 L CNN
+F 4 "Mezzanine Connectors (Board to Board) SMD RoHS 40 Pos" H 6300 2900 50  0001 L CNN "Description"
+F 5 "0.95" H 6300 2800 50  0001 L CNN "Height"
+F 6 "TXGA" H 6300 2700 50  0001 L CNN "Manufacturer_Name"
+F 7 "FBB04004-M40S1003K6M" H 6300 2600 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 6300 2500 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 6300 2400 50  0001 L CNN "Arrow Price/Stock"
+F 10 "" H 6300 2300 50  0001 L CNN "Mouser Part Number"
+F 11 "" H 6300 2200 50  0001 L CNN "Mouser Price/Stock"
+	1    3950 2800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4250 3400 4250 3550
+Wire Wire Line
+	4250 3550 3850 3550
+Wire Wire Line
+	3850 3550 3850 2750
+Wire Wire Line
+	3850 2200 4250 2200
+Wire Wire Line
+	4250 2200 4250 2300
+Wire Wire Line
+	4350 3400 4350 3600
+Wire Wire Line
+	4350 3600 3800 3600
+Wire Wire Line
+	3800 2150 4350 2150
+Wire Wire Line
+	4350 2150 4350 2300
+Wire Wire Line
+	6150 3400 6150 3600
+Wire Wire Line
+	6150 3600 6550 3600
+Wire Wire Line
+	6550 3600 6550 2200
+Wire Wire Line
+	6550 2200 6150 2200
+Wire Wire Line
+	6150 2200 6150 2300
+NoConn ~ 6450 2800
+NoConn ~ 6450 2900
+NoConn ~ 3950 2800
+NoConn ~ 3950 2900
+Wire Wire Line
+	5850 2300 5850 2150
+Wire Wire Line
+	5850 2150 6600 2150
+Wire Wire Line
+	6600 2150 6600 2550
+Wire Wire Line
+	6600 2550 7150 2550
+Wire Wire Line
+	5750 2300 5750 1850
+Wire Wire Line
+	3450 4000 3450 1900
+Wire Wire Line
+	3450 1900 5650 1900
+Wire Wire Line
+	5650 1900 5650 2300
+Wire Wire Line
+	5550 2300 5550 1950
+Wire Wire Line
+	5550 1950 3500 1950
+Wire Wire Line
+	3500 1950 3500 4100
+Wire Wire Line
+	3500 4100 3000 4100
+Wire Wire Line
+	2400 4500 4350 4500
+Wire Wire Line
+	5450 2300 5450 1800
+Wire Wire Line
+	5450 1800 3350 1800
+Wire Wire Line
+	3350 1800 3350 3350
+Wire Wire Line
+	5250 2300 5250 2000
+Wire Wire Line
+	5250 2000 3300 2000
+Wire Wire Line
+	3300 2000 3300 3250
+Wire Wire Line
+	5150 2300 5150 1750
+Wire Wire Line
+	5150 1750 3250 1750
+Wire Wire Line
+	3250 1750 3250 3150
+Wire Wire Line
+	3250 3150 2950 3150
+Wire Wire Line
+	5050 2300 5050 2050
+Wire Wire Line
+	5050 2050 3700 2050
+Wire Wire Line
+	3700 2050 3700 3050
+Wire Wire Line
+	5050 3700 5050 3400
+Wire Wire Line
+	3700 3050 2950 3050
+Connection ~ 3700 3050
+Wire Wire Line
+	3700 3050 3700 3700
+Wire Wire Line
+	4450 2300 4450 2100
+Wire Wire Line
+	4450 2100 3750 2100
+Wire Wire Line
+	3750 2100 3750 2950
+Wire Wire Line
+	3750 2950 2950 2950
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5EF24551
+P 2400 1850
+F 0 "JP1" V 2446 1917 50  0000 L CNN
+F 1 "SolderJumper_3_Open" V 2355 1917 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm_NumberLabels" H 2400 1850 50  0001 C CNN
+F 3 "~" H 2400 1850 50  0001 C CNN
+	1    2400 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 1550 2400 1550
+Wire Wire Line
+	2400 1550 2400 1650
+Wire Wire Line
+	2550 1850 2600 1850
+Wire Wire Line
+	2600 1850 2600 1550
+Wire Wire Line
+	2600 1550 3150 1550
+Wire Wire Line
+	4450 3400 4450 3650
+Wire Wire Line
+	4450 3650 3750 3650
+Wire Wire Line
+	3750 3650 3750 2950
+Connection ~ 3750 2950
+Wire Wire Line
+	3700 3700 5050 3700
+Wire Wire Line
+	3800 3600 3800 2850
+Wire Wire Line
+	2950 2850 3800 2850
+Connection ~ 3800 2850
+Wire Wire Line
+	3800 2850 3800 2150
+Wire Wire Line
+	2950 2750 3850 2750
+Connection ~ 3850 2750
+Wire Wire Line
+	3850 2750 3850 2200
+Wire Wire Line
+	2950 2350 3200 2350
+Wire Wire Line
+	3200 2350 3200 1650
+Wire Wire Line
+	3200 1650 7650 1650
+Wire Wire Line
+	7650 1650 7650 1550
+Wire Wire Line
+	7650 1550 7950 1550
+Wire Wire Line
+	2950 2650 3150 2650
+Wire Wire Line
+	3150 2650 3150 1550
+Connection ~ 3150 1550
+Wire Wire Line
+	3150 1550 7600 1550
+Wire Wire Line
+	4350 3600 6150 3600
+Connection ~ 4350 3600
+Connection ~ 6150 3600
+Wire Wire Line
+	4350 3600 4350 4500
+Connection ~ 4350 4500
+Wire Wire Line
+	4350 4500 7700 4500
+Wire Wire Line
+	5850 4000 5850 3400
+Wire Wire Line
+	5850 4000 6650 4000
+Wire Wire Line
+	7150 2750 6700 2750
+Wire Wire Line
+	6700 2750 6700 4050
+Wire Wire Line
+	5750 4050 5750 3400
+Wire Wire Line
+	5750 4050 6700 4050
+Wire Wire Line
+	7150 2850 6750 2850
+Wire Wire Line
+	6750 2850 6750 4100
+Wire Wire Line
+	5650 4100 5650 3400
+Wire Wire Line
+	5650 4100 6750 4100
+Wire Wire Line
+	7150 2950 6800 2950
+Wire Wire Line
+	6800 2950 6800 4150
+Wire Wire Line
+	5550 4150 5550 3400
+Wire Wire Line
+	5550 4150 6800 4150
+Wire Wire Line
+	7150 3050 6850 3050
+Wire Wire Line
+	6850 3050 6850 4200
+Wire Wire Line
+	5450 4200 5450 3400
+Wire Wire Line
+	5450 4200 6850 4200
+Wire Wire Line
+	5250 3400 5250 4250
+Wire Wire Line
+	5250 4250 6900 4250
+Wire Wire Line
+	6900 4250 6900 3150
+Wire Wire Line
+	6900 3150 7150 3150
+Wire Wire Line
+	5150 3400 5150 4300
+Wire Wire Line
+	5150 4300 6950 4300
+Wire Wire Line
+	6950 4300 6950 3250
+Wire Wire Line
+	6950 3250 7150 3250
+Wire Wire Line
+	2400 3700 2400 4500
+Wire Wire Line
+	4850 3400 4850 4350
+Wire Wire Line
+	4850 4350 7000 4350
+Wire Wire Line
+	7000 4350 7000 3350
+Wire Wire Line
+	7000 3350 7150 3350
 $EndSCHEMATC
